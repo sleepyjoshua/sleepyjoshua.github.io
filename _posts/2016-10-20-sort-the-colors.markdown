@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Sort the colors!"
+title: "Internship Test"
 date: 2016-10-20 12:24:42 -0400
 categories: cross-stitch
 ---
-Let's see if this works
+Do you have what it takes to work at JFactory?
 <iframe src="http://joshuahouston.me/test/index.html" frameborder="0" width="100%" height="720">DMC Colors Test</iframe>
