@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DMC Colors</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel='stylesheet' type='text/css' href='https://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ol {
+    list-style-type: none;
+	position: relative;
+	left: -20px;
+}
+
+ol li {
+	background: #eeeeee;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin: 3px;
+	padding: 0.4em;
+	font-size: 1em;
+	height: 16px;
+	font-family: Verdana, Arial, Sans-Serif;
+}
+
+ol .ui-selected {
+	background: #F39814; color: white;
+}
+#dmc333 {
+  background: #7F5482;
+  color: white;
+}
+#dmc349 {
+  background: #DC3D5B;
+}
+#dmc445 {
+  background: #FFFFBE;
+}
+#dmc498 {
+  background: #BB0061;
+  color: white;
+}
+#dmc797 {
+  background: #1E4263;
+  color: white;
+}
+#dmc905 {
+  background: #627739;
+  color: white;
+}
+#dmc996 {
+  background: #AADEE1;
+}
+</head>
+<body>
+<script>
+$(document).ready(function() {
+    $('ol').sortable();
+});
+</script>
+<ol>
+            <li id="dmc445">DMC 445</li>
+            <li id="dmc333">DMC 333</li>
+            <li id="dmc905">DMC 905</li>
+            <li id="dmc349">DMC 349</li>
+            <li id="dmc996">DMC 996</li>
+            <li id="dmc797">DMC 797</li>
+            <li id="dmc498">DMC 498</li>
+ </ol>   
+</body>
+</html>
