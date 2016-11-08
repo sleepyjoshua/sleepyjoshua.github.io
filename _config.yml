@@ -17,3 +17,7 @@ github_username:  sleepyjoshua
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+- cross_stitch
