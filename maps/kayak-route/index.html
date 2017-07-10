@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.38.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamZhY3RvcnkiLCJhIjoiZXdJam1yZyJ9.-AOTWD0gk1_3wuciI3DbsQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center: [-135.305, 57.044],
+    zoom: 13
+});
+
+map.on('load', function () {
+
+    map.addLayer({
+        "id": "route",
+        "type": "line",
+        "source": {
+            "type": "geojson",
+            "data": {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                    "type": "LineString",
+                    "coordinates": [
+                      [ -135.278993, 57.03648 ],
+                      [ -135.279572, 57.036235 ],
+                      [ -135.28028, 57.03599 ],
+                      [ -135.281718, 57.035885 ],
+                      [ -135.285494, 57.035897 ],
+                      [ -135.288112, 57.036013 ],
+                      [ -135.289571, 57.036107 ],
+                      [ -135.290902, 57.036364 ],
+                      [ -135.295279, 57.037216 ],
+                      [ -135.299549, 57.038337 ],
+                      [ -135.308132, 57.04066 ],
+                      [ -135.313969, 57.042294 ],
+                      [ -135.320213, 57.044197 ],
+                      [ -135.322745, 57.045177 ],
+                      [ -135.325105, 57.046298 ],
+                      [ -135.326157, 57.04701 ],
+                      [ -135.327036, 57.047698 ],
+                      [ -135.328217, 57.048282 ],
+                      [ -135.329461, 57.048737 ],
+                      [ -135.331564, 57.049297 ]
+                    ]
+                }
+            }
+        },
+        "layout": {
+            "line-join": "round",
+            "line-cap": "round"
+        },
+        "paint": {
+            "line-color": "#444",
+            "line-width": 3
+        }
+    });
+});
+</script>
+
+</body>
+</html>
